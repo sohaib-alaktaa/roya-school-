@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&family=Tajawal:wght@300&display=swap"
+            rel="stylesheet">
+        <link rel="icon" href="../image/removbg-preview.png" type="image/icon type">
+        <link rel="stylesheet" href="../CSS/library.css">
+        <title>roya school - المكتبة</title>
+    </head>
+
+    <body>
+        <header>
+            <a href="#" class="logo"> ROYA SCHOOL </a>
+            <nav>
+                <a href="../index.html"> الصفحة الرئيسية </a>
+                <a href="./library.html"> مكتبة متنوعة </a>
+                <a href="./register.html"> التسجيل</a>
+            </nav>
+        </header>
+        <section class="first_sec">
+            <div>
+                <img src="../image/icons8-literature-100.png" />
+                <p> مكتبة متنوعة فيها كل ما يلزم أطفالك </p>
+                <h2> <span> مكتبة متنوعة </span> (قصص - أفلام - أغاني) </h2>
+                <h3 class="change_tex"> </h3>
+                <div>
+                    <button onclick="f_popup()" id="btn_login"><span> تسجيل دخول مدير النظام </span></button>
+                    <button onclick="f_btn_hid()" class="btn_out" id="btn_logout"><span> تسجيل الخروج </span></button>
+                    <div class="log_page" id="popup">
+                        <div class="content">
+                            <button class="exit" onclick="f_hide()"><img
+                                    src="../image/icons8-close-32 (3).png"></button>
+                            <h1> تسجيل الدخول </h1>
+                            <form>
+                                <input type=" text" placeholder="اسم المستخدم" required name="user_name" id="user-name">
+                                <input type="password" placeholder="كلمة السر" required name="password" id="password">
+                                <button onclick="f_load()"> <span>تسجيل</span></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cards">
+            <h2 class="title"> القصص </h2>
+            <p> لدينا مجموعة متنوعة من القصص المتوفرة مجاناً لكل زوار موقعنا حيث يمكنهم قراءتها أو تحميلها مجاناً </p>
+            <div class="content" id="cards_add">
+                <div class="card">
+                    <div class="buttons_mov" id="btn_show0">
+                        <div class="buttons">
+                            <button class="button_remove" id="remove">
+                                <div><img src="../image/icons8-delete-32.png"></div>
+                            </button>
+                        </div>
+                        <div class="buttons">
+                            <button class="button_edit" id="edit">
+                                <div><img src="../image/icons8-edit-32 (3).png"></div>
+                            </button>
+                        </div>
+                    </div>
+                    <h3> قصص إسلامية </h3>
+                    <p>مكتبة متنوعة من قصص السيرة والأنبياء </p>
+                    <a href="https://books-library.net/files/books-library.online_noo541390ec952eecade56875-18080.pdf"
+                        target="_blank">
+                        <div class="islam">
+                            <img src="../image/png-clipart.png">
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <div class="buttons_mov" id="btn_show1">
+                        <div class="buttons">
+                            <button class="button_remove" id="remove">
+                                <div><img src="../image/icons8-delete-32.png"></div>
+                            </button>
+                        </div>
+                        <div class="buttons">
+                            <button class="button_edit" id="edit">
+                                <div><img src="../image/icons8-edit-32 (3).png"></div>
+                            </button>
+                        </div>
+                    </div>
+                    <h3> قصص تربوية </h3>
+                    <p> العديد من القصص الهادفة والتوعوية </p>
+                    <a href="https://books-library.net/files/books-library.online-02092225Bj9A0.pdf" target="_blank">
+                        <div class="educational">
+                            <img src="../image/pngtree-cartoon.png">
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <div class="buttons_mov" id="btn_show2">
+                        <div class="buttons">
+                            <button class="button_remove" id="remove">
+                                <div><img src="../image/icons8-delete-32.png"></div>
+                            </button>
+                        </div>
+                        <div class="buttons">
+                            <button class="button_edit" id="edit">
+                                <div><img src="../image/icons8-edit-32 (3).png"></div>
+                            </button>
+                        </div>
+                    </div>
+                    <h3> قصص ترفيهية </h3>
+                    <p> مجموعة من القصص الممتعة والمسلية </p>
+                    <a href="https://books-library.net/files/books-library.net-10291544Gh2G8.pdf" target="_blank">
+                        <div class="entertainment">
+                            <img src="../image/6152remove.png">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="button_add" id="btn_add_show1">
+                    <div><img src="../image/icons8-add-image-32 (1).png"></div>
+                </button>
+            </div>
+        </section>
+        <section class="cards">
+            <h2 class="title"> الأفلام </h2>
+            <p> لدينا مجموعة متنوعة من الرسوم المتحركة المفيدة والمسلية لمختلف الأعمار </p>
+            <div class="content">
+                <div class="card" id="">
+                    <div class="buttons_mov" id="btn_show3">
+                        <div class="buttons">
+                            <button class="button_remove" id="remove">
+                                <div><img src="../image/icons8-delete-32.png"></div>
+                            </button>
+                        </div>
+                        <div class="buttons">
+                            <button class="button_edit" id="edit">
+                                <div><img src="../image/icons8-edit-32 (3).png"></div>
+                            </button>
+                        </div>
+                    </div>
+                    <h3> توم & جيري </h3>
+                    <div class="tom_jerry">
+                        <img src="../image/bd3ed-removebg-preview.png">
+                    </div>
+                    <a class="icon" href="https://www.youtube.com/watch?v=_Q6YbIZsuPA" target="_blank">
+                        <img src="../image/icons8-play-button-49.png">
+                    </a>
+                </div>
+                <div class="card">
+                    <div class="buttons_mov" id="btn_show4">
+                        <div class="buttons">
+                            <button class="button_remove" id="remove">
+                                <div><img src="../image/icons8-delete-32.png"></div>
+                            </button>
+                        </div>
+                        <div class="buttons">
+                            <button class="button_edit" id="edit">
+                                <div><img src="../image/icons8-edit-32 (3).png"></div>
+                            </button>
+                        </div>
+                    </div>
+                    <h3> سبونج بوب </h3>
+                    <div class="spongebob">
+                        <img src="../image/spongebob-cliparts.gif">
+                    </div>
+                    <a class="icon" href="https://www.youtube.com/watch?v=Ommz8QGztak" target="_blank">
+                        <img src="../image/icons8-play-button-49.png">
+                    </a>
+                </div>
+                <div class="card">
+                    <div class="buttons_mov" id="btn_show5">
+                        <div class="buttons">
+                            <button class="button_remove" id="remove">
+                                <div><img src="../image/icons8-delete-32.png"></div>
+                            </button>
+                        </div>
+                        <div class="buttons">
+                            <button class="button_edit" id="edit">
+                                <div><img src="../image/icons8-edit-32 (3).png"></div>
+                            </button>
+                        </div>
+                    </div>
+                    <h3> سنافر </h3>
+                    <div class="smurf">
+                        <img src="../image/smurfette-brainy-smurf.png">
+                    </div>
+                    <a class="icon" href="https://www.youtube.com/watch?v=hZN4FzALCFI" target="_blank">
+                        <img src="../image/icons8-play-button-49.png">
+                    </a>
+                </div>
+                <div class="card">
+                    <div class="buttons_mov" id="btn_show6">
+                        <div class="buttons">
+                            <button class="button_remove" id="remove">
+                                <div><img src="../image/icons8-delete-32.png"></div>
+                            </button>
+                        </div>
+                        <div class="buttons">
+                            <button class="button_edit" id="edit">
+                                <div><img src="../image/icons8-edit-32 (3).png"></div>
+                            </button>
+                        </div>
+                    </div>
+                    <h3> غامبول </h3>
+                    <div class="gumball">
+                        <img src="../image/darwin-amazing.png">
+                    </div>
+                    <a class="icon" href="https://www.youtube.com/watch?v=i8NGTqh9U7Q" target="_blank">
+                        <img src="../image/icons8-play-button-49.png">
+                    </a>
+                </div>
+                <div class="card">
+                    <div class="buttons_mov" id="btn_show7">
+                        <div class="buttons">
+                            <button class="button_remove" id="remove">
+                                <div><img src="../image/icons8-delete-32.png"></div>
+                            </button>
+                        </div>
+                        <div class="buttons">
+                            <button class="button_edit" id="edit">
+                                <div><img src="../image/icons8-edit-32 (3).png"></div>
+                            </button>
+                        </div>
+                    </div>
+                    <h3> بن تن </h3>
+                    <div class="ben_ten">
+                        <img src="../image/ben-10-png-removebg-preview.png">
+                    </div>
+                    <a class="icon" href="https://www.youtube.com/watch?v=Su3bVHzsAIY" target="_blank">
+                        <img src="../image/icons8-play-button-49.png">
+                    </a>
+                </div>
+                <div class="card">
+                    <div class="buttons_mov" id="btn_show8">
+                        <div class="buttons">
+                            <button class="button_remove" id="remove">
+                                <div><img src="../image/icons8-delete-32.png"></div>
+                            </button>
+                        </div>
+                        <div class="buttons">
+                            <button class="button_edit" id="edit">
+                                <div><img src="../image/icons8-edit-32 (3).png"></div>
+                            </button>
+                        </div>
+                    </div>
+                    <h3> ماشا والدب </h3>
+                    <div class="masha">
+                        <img src="../image/masha-pointing-removebg.png">
+                    </div>
+                    <a class="icon" href="https://www.youtube.com/watch?v=WZC2KmDClKM" target="_blank">
+                        <img src="../image/icons8-play-button-49.png">
+                    </a>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="button_add" id="btn_add_show2">
+                    <div><img src="../image/icons8-add-image-32 (1).png"></div>
+                </button>
+            </div>
+        </section>
+        <section class="cards">
+            <h2 class="title"> الأغاني </h2>
+            <p> لدينا مجموعة متنوعة من الأغاني المسلية والمفيدة بآن واحد </p>
+            <div class="content">
+                <div class="card">
+                    <div class="buttons_mov" id="btn_show9">
+                        <div class="buttons">
+                            <button class="button_remove" id="remove">
+                                <div><img src="../image/icons8-delete-32.png"></div>
+                            </button>
+                        </div>
+                        <div class="buttons">
+                            <button class="button_edit" id="edit">
+                                <div><img src="../image/icons8-edit-32 (3).png"></div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="song1">
+                        <img src="../image/screen-4-removebg-preview.png">
+                    </div>
+                    <h3> أغنية هالصيصان </h3>
+                    <a class="link" href="https://www.youtube.com/watch?v=H6qNS9toSWk" target="_blank"> &nbsp استماع
+                        &nbsp </a>
+                </div>
+                <div class="card">
+                    <div class="buttons_mov" id="btn_show10">
+                        <div class="buttons">
+                            <button class="button_remove" id="remove">
+                                <div><img src="../image/icons8-delete-32.png"></div>
+                            </button>
+                        </div>
+                        <div class="buttons">
+                            <button class="button_edit" id="edit">
+                                <div><img src="../image/icons8-edit-32 (3).png"></div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="song2">
+                        <img src="../image/maxresdefahulght-removebg-preview.png">
+                    </div>
+                    <h3> أغنية الخضروات </h3>
+                    <a class="link" href="https://www.youtube.com/watch?v=Pf1Y0JtfMPU" target="_blank"> &nbsp استماع
+                        &nbsp</a>
+                </div>
+                <div class="card">
+                    <div class="buttons_mov" id="btn_show11">
+                        <div class="buttons">
+                            <button class="button_remove" id="remove">
+                                <div><img src="../image/icons8-delete-32.png"></div>
+                            </button>
+                        </div>
+                        <div class="buttons">
+                            <button class="button_edit" id="edit">
+                                <div><img src="../image/icons8-edit-32 (3).png"></div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="song3">
+                        <img src="../image/vehicle-transport-removebg-preview.png">
+                    </div>
+                    <h3> أغنية توت توت </h3>
+                    <a class="link" href="https://www.youtube.com/watch?v=Y4jx7uY4qks" target="_blank"> &nbsp استماع
+                        &nbsp</a>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="button_add" id="btn_add_show3">
+                    <div><img src="../image/icons8-add-image-32 (1).png"></div>
+                </button>
+            </div>
+        </section>
+        <footer class="footer">
+            <p class="footer_title">Copyrights @ <span> 2022 | roya school </span>
+                <br> <span class="span2"> Design By SVU </span>
+            </p>
+            <div class="icons">
+                <a href="#"><img src="../image/icons8-facebook-48.png"></a>
+                <a href="#"><img src="../image/icons8-old-twitter-logo-48.png"></a>
+                <a href="#"><img src="../image/icons8-youtube-48.png"></a>
+            </div>
+        </footer>
+        <script src="../JS/library.js"></script>
+    </body>
