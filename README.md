@@ -4,12 +4,6 @@ A clean, responsive showcase website designed and developed for **Roya School**.
 
 ---
 
-## 🌐 Live Demo
-
-Visit the deployed website on GitHub Pages:  
-👉 **[https://abdulmalek44.github.io/roya-school/](https://abdulmalek44.github.io/roya-school/)**
-
----
 
 ## 🛠️ Built With
 
